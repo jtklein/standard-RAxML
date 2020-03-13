@@ -3,7 +3,7 @@
 CC = mpicc 
 
 
-CFLAGS = -D_WAYNE_MPI -D_GNU_SOURCE -fomit-frame-pointer -funroll-loops -O2  -D_USE_PTHREADS -msse
+CFLAGS = -D_WAYNE_MPI -D_GNU_SOURCE -mmacosx-version-min=10.5 -fomit-frame-pointer -funroll-loops -O2  -D_USE_PTHREADS -msse
 
 
 LIBRARIES = -lm -pthread
